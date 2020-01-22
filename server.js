@@ -8,7 +8,7 @@ const connectDB = require('./connection')
 
 connectDB();
 
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 80;
 const server = http.createServer(app);
 
 

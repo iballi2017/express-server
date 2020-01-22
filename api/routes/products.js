@@ -79,7 +79,7 @@ router.post('/', checkAuth, upload.single('productImage'), (req, res, next) => {
 })
 
 
-router.get('/', checkAuth, (req, res, next) => {
+router.get('/', (req, res, next) => {
     Product.find()
         .select('_id productName productPrice productImage productDescription')
         .exec()
